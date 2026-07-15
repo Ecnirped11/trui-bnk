@@ -11,7 +11,8 @@ ALLOWED_HOSTS = [
     "precontinental-unmourning-rubie.ngrok-free.dev",
     # 'trui-bnk.onrender.com',
     'trui-bnk-zhb3.onrender.com',
-    'trui-bnk-production.up.railway.app'
+    'trui-bnk-production.up.railway.app',
+    "trui-bnk-production-776d.up.railway.app"
 ]
 
 INSTALLED_APPS = [
